@@ -34,6 +34,8 @@ public class Main {
         unionList.add(new QuickUnion_OptimizationForSize(cap));
         unionList.add(new QuickUnion_OptimizationForRank(cap));
         unionList.add(new QuickUnion_OptimizationForPathCompression(cap));
+        unionList.add(new QuickUnion_OptimizationForPathCompression2(cap));
+
 
         unionList.forEach(union -> {
             double v = testUnion(union, m);
